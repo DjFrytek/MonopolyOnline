@@ -1,0 +1,37 @@
+html, body {
+  margin: 0;
+  padding: 0;
+	background-color: rgb(40, 40, 40);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+canvas {
+  display: block;
+  margin-left: 25px;
+  margin-top: 25px;
+  touch-action: none;
+}
+
+#powiekszenie {
+  position: absolute;
+  margin-left: 1225px;
+  margin-top: 25px;
+  z-index: 10;
+}
+#niebieska {
+  position: absolute;
+  margin-left: 1225px;
+  margin-top: 425px;
+  z-index: 10;
+}
+
+button {
+  margin-left: 1525px;
+  margin-top: 25px;
+  z-index: 10;
+  padding: 391px 20px;
+}

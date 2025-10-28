@@ -1,0 +1,15 @@
+Po pierwsze, IP w sketch.js ma byc takie samo jak obecne.
+Teraz mam zepsuty port forward przez Play, wiec z RadminVPN ip
+
+Aby uruchomic serwer wejdz w cmd, cd do lokalizacji tego folderu i "node server.js"
+
+Jak grac:
+enterPassword("haslo");  |   Haslo to "aot"
+enableAll("haslo");      |   Wszyscy obecnie polaczeni moga grac
+disableAll("haslo");     |   Wszyscy obecnie polaczeni nie moga grac
+changeName(id, "name");  |   id, to number miejsca na planszy, name to imie
+startingMoney(id);       |   Rozdaje hajs graczowi o danym ip
+
+Trzymajac Z i klikajac na hajs mozna go wrocic do banku.
+Klikajac D mozna widziec licznik hajsu
+
