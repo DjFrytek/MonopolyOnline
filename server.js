@@ -1,18 +1,20 @@
 var express = require('express');
 
 var app = express();
-var server = app.listen(3000);
+const PORT = process.env.PORT || 3000;
+const server = app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 app.use(express.static('public'));
 
 var socket = require('socket.io');
 
-var io = socket(server, {
+const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
-    methods: ["GET", "POST"],
-    credentials: true,
-  },
+    origin: "*",
+    methods: ["GET", "POST"]
+  }
 });
 
 let width = 1200;

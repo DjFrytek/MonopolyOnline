@@ -49,7 +49,7 @@ function setup() {
 	bankTemplate = loadImage("textures/bank.png");
 	mapTemplate = loadImage("textures/board.png");
   
-	socket = io.connect('26.166.17.228:3000');
+	socket = io();
 	socket.on('yourID', registerMyID);
 	socket.on('pointers', updateUsersPointers);
 	socket.on('userMoved', userMoved);
