@@ -59,6 +59,7 @@ io.sockets.on('connection', newConnection);
 function newConnection(socket) {
 	console.log("New connection: " + socket.id);
 	users.push(new User(socket.id, -10, -10, colors[colorIndex]));
+    users[users.length-1].enable = true;
 	if(colorIndex < 8) colorIndex++;
 	socket.on('disconnect', function () {
 		console.log("disconnected " + socket.id);
